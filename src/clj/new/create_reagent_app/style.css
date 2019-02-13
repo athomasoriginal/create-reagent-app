@@ -1,0 +1,29 @@
+:root {
+  --color-purple: rgba(197, 18, 193, 1);
+  --color-pink: rgba(241, 50, 50, 1);
+}
+
+#root {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  font-family: Arial;
+  align-items: center;
+  justify-content: center;
+}
+
+.site__title {
+  font-size: 100px;
+  width: 50%;
+  text-align: center;
+}
+
+.site__title-text {
+  background: -webkit-linear-gradient(
+    34deg,
+    var(--color-purple),
+    var(--color-pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

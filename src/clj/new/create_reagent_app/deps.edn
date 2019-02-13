@@ -1,0 +1,12 @@
+{:paths
+ ["src" "tests" "resources"]
+
+ :deps
+ {org.clojure/clojurescript {:mvn/version "1.10.520"}
+
+  com.bhauman/figwheel-main {:mvn/version "0.2.0"}
+
+  reagent                   {:mvn/version "0.8.1"}}
+
+ :aliases
+ {:dev {:main-opts ["-m"  "figwheel.main" "--build" "dev" "--repl"]}}}
