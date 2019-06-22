@@ -1,15 +1,5 @@
-{:paths ["resources" "src"]
+{:paths ["src"]
  :deps
  {org.clojure/clojure   {:mvn/version "RELEASE"}
   seancorfield/clj-new  {:git/url "https://github.com/seancorfield/clj-new"
-                         :sha "f6fcc24bfa5d77167ff826990cd2c9c65eed4fed"}}
- :aliases
- {:test {:extra-paths ["test"]
-         :extra-deps  {org.clojure/test.check {:mvn/version "RELEASE"}}}
-
-   :runner
-  {:extra-deps {com.cognitect/test-runner
-                {:git/url "https://github.com/cognitect-labs/test-runner"
-                 :sha "76568540e7f40268ad2b646110f237a60295fa3c"}}
-   :main-opts ["-m" "cognitect.test-runner"
-               "-d" "test"]}}}
+                         :sha "f6fcc24bfa5d77167ff826990cd2c9c65eed4fed"}}}
