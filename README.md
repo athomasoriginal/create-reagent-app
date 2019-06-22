@@ -20,7 +20,7 @@ This project contains a `clj-new` template. This template is the one that I use 
 - Run the following command
 
   ```bash
-  clj -A:new https://github.com/tkjone/create-reagent-app@deb171b56e7f5b1f56537c41bacbb89f99daf469 myapp/special-app
+  clj -A:new https://github.com/tkjone/create-reagent-app@ebee65aa5f534a4d17ad0a09e82ba538c48d9108 myapp/special-app
   ```
 
   > The `myapp/special-app` is the name of your project. This is just an example so change it to whatever you like.
