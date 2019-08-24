@@ -1,34 +1,48 @@
 # Create Reagent App
 
-This project contains a `clj-new` template. This template is the one that I use when I want to quickly start a Reagent app.
+Setup a ClojureScript/Reagent app in one command!
+
+Want to learn more about this project?  Read [Start a ClojureScript App from Scratch](https://betweentwoparens.com/start-a-clojurescript-app-from-scratch)
 
 ## Housekeeping
 
-- clj
+- [clj](https://clojurescript.org/guides/quick-start)
 
 ## QuickStart
 
-- Open `deps.edn` file and add
-
-  ```clojure
-  {:aliases
-   {:new
-    {:extra-deps {seancorfield/clj-new {:mvn/version "RELEASE"}}
-     :main-opts  ["-m" "clj-new.create"]}}}
-  ```
-
-- Run the following command
+- Move to the directory where you want your ClojureScript to live and run:
 
   ```bash
-  clj -A:new https://github.com/tkjone/create-reagent-app@ebee65aa5f534a4d17ad0a09e82ba538c48d9108 myapp/special-app
+  clj -Sdeps '{:deps
+                {seancorfield/clj-new {:mvn/version "0.7.7"}}}' \
+    -m clj-new.create \
+    https://github.com/tkjone/create-reagent-app@1c3f4a2f30bc1d2c7827c8572bf2c5a1fa0c839c \
+    organization-name/project-name
   ```
 
-  > The `myapp/special-app` is the name of your project. This is just an example so change it to whatever you like.
+> `organization-name/project-name` will become of your project and will generate a project structure like this:
 
-- Move into `special-app`
+```bash
+project-name
+├── README.md
+├── deps.edn
+├── dev.cljs.edn
+├── resources
+│   └── public
+│       ├── index.html
+│       └── style.css
+├── src
+│   └── organization-name
+│       └── project-name.cljs
+└── test
+    └── organization-name
+        └── project-name_test.cljs
+```
+
+- Move into `project-name`
 
   ```bash
-  cd special-app
+  cd project-name
   ```
 
 - Start the app
@@ -37,20 +51,6 @@ This project contains a `clj-new` template. This template is the one that I use 
   clj -A:dev
   ```
 
-## Overview
+## Notes
 
-When you specified `myapp/special-app` the `special-app` part is the name of your app whereas the `myapp` part would be the name of your group, business, organization etc. You can see this illustrated in the following structure
-
-```bash
-special-app
-├── README.md
-├── deps.edn
-├── dev.cljs.edn
-├── resources
-│   └── public
-│       ├── index.html
-│       └── style.css
-└── src
-    └── myapp
-        └── special_app.cljs
-```
+The structure of `organization-name/project-name` is defined by `clj-new` and not this template.  The reason I used these as the example is because it felt cleaner to describe it as `org/proj`.  Feel free to format however you like :)
