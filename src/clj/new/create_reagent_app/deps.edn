@@ -1,5 +1,5 @@
 {:paths
- ["src" "test" "resources"]
+ ["src" "test" "resources" "target"]
 
  :deps
  {org.clojure/clojurescript {:mvn/version "1.10.520"}
