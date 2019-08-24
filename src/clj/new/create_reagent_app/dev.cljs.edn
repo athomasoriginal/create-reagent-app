@@ -1,4 +1,3 @@
-
 ^{:watch-dirs ["src"]
   :css-dirs   ["resources"]}
 {:main {{namespace}}}
