@@ -1,0 +1,3 @@
+{:main       {{namespace}}
+ :output-dir "out"
+ :output-to  "out/dev-main.js"}

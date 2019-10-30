@@ -9,4 +9,9 @@
   reagent                   {:mvn/version "0.8.1"}}
 
  :aliases
- {:dev {:main-opts ["-m"  "figwheel.main" "--build" "dev" "--repl"]}}}
+ {:dev  {:main-opts ["-m"      "figwheel.main"
+                     "--build" "dev" "--repl"]}
+
+  :prod {:main-opts ["-m"              "figwheel.main"
+                     "--optimizations" "advanced"
+                     "--build-once"    "prod"]}}}
