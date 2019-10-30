@@ -16,7 +16,7 @@ Want to learn more about this project?  Read [Start a ClojureScript App from Scr
   clj -Sdeps '{:deps
                 {seancorfield/clj-new {:mvn/version "0.7.7"}}}' \
     -m clj-new.create \
-    https://github.com/tkjone/create-reagent-app@be36753ffaa89b083765beacf2401c73c133f656 \
+    https://github.com/tkjone/create-reagent-app@4444cb8d4192bbfc6ba1304381c62fe3aa46ea17 \
     organization-name/project-name
   ```
 
