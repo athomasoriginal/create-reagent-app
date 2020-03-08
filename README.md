@@ -1,12 +1,14 @@
 # Create Reagent App
 
-Setup a ClojureScript/Reagent app in one command!
+Setup a ClojureScript/Reagent app in one command.  This is meant to be used like Create React App but with much less opinion and no need to "eject" from anything.
 
-Want to learn more about this project?  Read [Start a ClojureScript App from Scratch](https://betweentwoparens.com/start-a-clojurescript-app-from-scratch)
+Want to understand the decision made for this app structure?  Read [Start a ClojureScript App from Scratch](https://betweentwoparens.com/start-a-clojurescript-app-from-scratch)
 
 ## Housekeeping
 
-- [clj](https://clojurescript.org/guides/quick-start)
+Before you can use this tool you will need Java and Clojure installed locally.  Here are some resources which should help you get started:
+
+- [Getting Started with Clojure](https://www.youtube.com/watch?v=SljDPNwAFOc&list=PLaGDS2KB3-ArG0WqAytE9GsZgrM-USsZA)
 
 ## QuickStart
 
@@ -14,7 +16,7 @@ Want to learn more about this project?  Read [Start a ClojureScript App from Scr
 
   ```bash
   clj -Sdeps '{:deps
-                {seancorfield/clj-new {:mvn/version "0.7.7"}}}' \
+                {seancorfield/clj-new {:mvn/version "0.9.0"}}}' \
     -m clj-new.create \
     https://github.com/tkjone/create-reagent-app@4444cb8d4192bbfc6ba1304381c62fe3aa46ea17 \
     organization-name/project-name
