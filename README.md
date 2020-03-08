@@ -18,7 +18,7 @@ Before you can use this tool you will need Java and Clojure installed locally.  
   clj -Sdeps '{:deps
                 {seancorfield/clj-new {:mvn/version "0.9.0"}}}' \
     -m clj-new.create \
-    https://github.com/tkjone/create-reagent-app@a3ed34ec5bebb49cf0fc67a3e8d57b54a210a47c \
+    https://github.com/tkjone/create-reagent-app@8c17f0f454f631f9238aed6be19aa1ca3c78f0d4 \
     organization-name/project-name
   ```
 
