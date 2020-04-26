@@ -21,9 +21,9 @@ What does this mean for you?  Not much right now.  For many using this setup, yo
 
 ## QuickStart
 
-As long as you have `clojure` installed you can following these commands exactly and end up with a working CLJS project.
+As long as you have `clojure` installed you can follow these commands exactly and end up with a working CLJS project.
 
-- Move to the directory where you want your ClojureScript app to live:
+- Move to the directory where you want your ClojureScript app to live
 
 - run `create-reagent-app`
 
@@ -35,7 +35,7 @@ As long as you have `clojure` installed you can following these commands exactly
     nike/fitness-app
   ```
 
-> In the above example `nike` is an example of your `organization-name` and `fitness-app` is the name of your app.  Thus, the structure of that line should be  `organization-name/project-name` and the result is that it will generate a project structure like this:
+> `nike` is an example of your `organization-name` and `fitness-app` is the name of your app.  Thus, the structure of that line should be  `organization-name/project-name` and the result is that it will generate a project structure like this:
 
 ```bash
 fitness-app
@@ -50,7 +50,7 @@ fitness-app
 │   └── nike
 │       └── fitness_app.cljs
 └── test
-    └── organization-name
+    └── nike
         └── fitness_app_test.cljs
 ```
 
