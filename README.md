@@ -72,7 +72,7 @@ fitness-app
 
 ### Add a Global Alias
 
-Having to run the `clj-new` command everytime by hand is not a great Developer Experience.  So what I do is add a global alias.  To do this, follow these steps:
+Having to run the command above everytime we want to create a CLJS project is not a great Developer Experience.  So what I do is add a global alias.  To do this, follow these steps:
 
 - Open your global `.clojure` directory
 
@@ -80,9 +80,9 @@ Having to run the `clj-new` command everytime by hand is not a great Developer E
   atom ~/.clojure
   ```
 
-  > Note that `atom` is _my_ editor.  If you're not using atom, replace `atom` with the CLI command for your editor of choice.
+  > Note that `atom` is _my_ editor.  If you're not using atom, replace `atom` with the CLI command for your editor of choice.  Or just open `~/.clojure` from inside of your editor.
 
-- Add the following alias
+- Add the following alias to the `deps.edn` file in `~/.clojure`
 
   ```clojure
   {:aliases
