@@ -92,7 +92,7 @@ Having to run the command above everytime we want to create a CLJS project is no
                   "https://github.com/tkjone/create-reagent-app@a0f6b829d91cbefe2f69dede72054538e080b012"]}}}
   ```
 
-  > For a better understanding of what this file looks like you can look at [my dot-clojure] file and to see what a `dot-clojure` file like looking like when you're truly awesome at Clojure I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
+  > For a better understanding of what this file looks like you can look at [my dot-clojure] file.  In addition, if you want to see another example of what an amazing `dot-clojure` file looks like I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
 
 - Move into the directory you want your clojurescript project to live
 
