@@ -31,7 +31,7 @@ As long as you have `clojure` installed you can following these commands exactly
   clj -Sdeps '{:deps
                 {seancorfield/clj-new {:mvn/version "1.0.199"}}}' \
     -m clj-new.create \
-    https://github.com/tkjone/create-reagent-app@8c17f0f454f631f9238aed6be19aa1ca3c78f0d4 \
+    https://github.com/tkjone/create-reagent-app@a0f6b829d91cbefe2f69dede72054538e080b012 \
     nike/fitness-app
   ```
 
