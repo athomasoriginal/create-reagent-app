@@ -92,7 +92,7 @@ Having to run the command above everytime we want to create a CLJS project is no
                   "https://github.com/tkjone/create-reagent-app@a0f6b829d91cbefe2f69dede72054538e080b012"]}}}
   ```
 
-  > For a better understanding of what this file looks like, you can checkout [Sean Corfield's dot-clojure] file.
+  > For a better understanding of what this file looks like you can look at [my dot-clojure] file and to see what a `dot-clojure` file like looking like when you're truly awesome at Clojure I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
 
 - Move into the directory you want your clojurescript project to live
 
@@ -117,4 +117,5 @@ The structure of `organization-name/project-name` is defined by `clj-new` and no
 [1.10.741]: https://clojurescript.org/news/2020-04-24-release
 [Add a Global Alias]: #add-an-global-alias
 [resolve many of these issues]: https://www.clojuriststogether.org/news/q2-2020-funding-announcement/
+[my dot-clojure]: https://github.com/athomasoriginal/dotfiles/blob/master/.clojure/deps.edn
 [Sean Corfield's dot-clojure]: https://github.com/seancorfield/dot-clojure
