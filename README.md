@@ -21,20 +21,24 @@ What does this mean for you?  Not much right now.  For many using this setup, yo
 
 ## QuickStart
 
-- Move to the directory where you want your ClojureScript to live and run:
+As long as you have `clojure` installed you can following these commands exactly and end up with a working CLJS project.
+
+- Move to the directory where you want your ClojureScript app to live:
+
+- run `create-reagent-app`
 
   ```bash
   clj -Sdeps '{:deps
-                {seancorfield/clj-new {:mvn/version "0.9.0"}}}' \
+                {seancorfield/clj-new {:mvn/version "1.0.199"}}}' \
     -m clj-new.create \
     https://github.com/tkjone/create-reagent-app@8c17f0f454f631f9238aed6be19aa1ca3c78f0d4 \
-    organization-name/project-name
+    nike/fitness-app
   ```
 
-> `organization-name/project-name` will become of your project and will generate a project structure like this:
+> In the above example `nike` is an example of your `organization-name` and `fitness-app` is the name of your app.  Thus, the structure of that line should be  `organization-name/project-name` and the result is that it will generate a project structure like this:
 
 ```bash
-project-name
+fitness-app
 ├── README.md
 ├── deps.edn
 ├── dev.cljs.edn
@@ -43,20 +47,20 @@ project-name
 │       ├── index.html
 │       └── style.css
 ├── src
-│   └── organization-name
-│       └── project-name.cljs
+│   └── nike
+│       └── fitness_app.cljs
 └── test
     └── organization-name
-        └── project-name_test.cljs
+        └── fitness_app_test.cljs
 ```
 
-- Move into `project-name`
+- Move into `fitness-app`
 
   ```bash
-  cd project-name
+  cd fitness-app
   ```
 
-- Start the app
+- Run the app for development
 
   ```bash
   clj -A:dev
@@ -64,7 +68,7 @@ project-name
 
 ## Notes
 
-The structure of `organization-name/project-name` is defined by `clj-new` and not this template.  The reason I used these as the example is because it felt cleaner to describe it as `org/proj`.  Feel free to format however you like :)
+The structure of `organization-name/project-name` is defined by `clj-new` and not this template.
 
 [Housekeeping]: #housekeeping
 [Quickstart]: #quickstart
