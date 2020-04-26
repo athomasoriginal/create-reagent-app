@@ -6,6 +6,8 @@ Want to understand the decision made for this project?  Read [Start a ClojureScr
 
 - [Housekeeping]
 - [Quickstart]
+- [Pro Tip]
+  - [Add a Global Alias]
 - [Notes]
 
 ## Housekeeping
@@ -66,14 +68,53 @@ fitness-app
   clj -A:dev
   ```
 
+## Pro Tips
+
+### Add a Global Alias
+
+Having to run the `clj-new` command everytime by hand is not a great Developer Experience.  So what I do is add a global alias.  To do this, follow these steps:
+
+- Open your global `.clojure` directory
+
+  ```bash
+  atom ~/.clojure
+  ```
+
+  > Note that `atom` is _my_ editor.  If you're not using atom, replace `atom` with the CLI command for your editor of choice.
+
+- Add the following alias
+
+  ```clojure
+  {:aliases
+   {:create-reagent-app
+    {:extra-deps {seancorfield/clj-new {:mvn/version "1.0.199"}}
+     :main-opts  ["-m" "clj-new.create"
+                  "https://github.com/tkjone/create-reagent-app@a0f6b829d91cbefe2f69dede72054538e080b012"]}}}
+  ```
+
+  > For a better understanding of what this file looks like, you can checkout [Sean Corfield's dot-clojure] file.
+
+- Move into the directory you want your clojurescript project to live
+
+- Run the above command:
+
+  ```clj
+  clj -A:create-reagent-app nike/fitness-app
+  ```
+
+Much better, yes?  Of course, whenever this project is updated, and you want those changes, you will have to update the `@a0f6b829d9...` portion of the `alias` to the latest version of this repo.   This is low effort though, and because of the stability, and low dep count of this project, you shouldn't need to worry about updating this very often.  Happy coding!
+
 ## Notes
 
 The structure of `organization-name/project-name` is defined by `clj-new` and not this template.
 
 [Housekeeping]: #housekeeping
 [Quickstart]: #quickstart
+[Pro Tip]: #pro-tip
 [Notes]: #notes
 [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
 [Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
 [1.10.741]: https://clojurescript.org/news/2020-04-24-release
+[Add a Global Alias]: #add-an-global-alias
 [resolve many of these issues]: https://www.clojuriststogether.org/news/q2-2020-funding-announcement/
+[Sean Corfield's dot-clojure]: https://github.com/seancorfield/dot-clojure
