@@ -1,6 +1,6 @@
 (ns ^:figwheel-hooks {{namespace}}
   (:require
-    [reagent.core :as r]))
+    [reagent.dom :as r.dom]))
 
 
 (defn app []
@@ -9,7 +9,7 @@
 
 
 (defn mount []
-  (r/render [app] (js/document.getElementById "root")))
+  (r.dom/render [app] (js/document.getElementById "root")))
 
 
 (defn ^:after-load re-render []
