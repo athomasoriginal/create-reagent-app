@@ -6,7 +6,7 @@ Want to understand the decision made for this project?  Read [Start a ClojureScr
 
 - [Housekeeping]
 - [Quickstart]
-- [Pro Tip]
+- [Pro Tips]
   - [Add a Global Alias]
 - [Notes]
 
@@ -110,12 +110,12 @@ The structure of `organization-name/project-name` is defined by `clj-new` and no
 
 [Housekeeping]: #housekeeping
 [Quickstart]: #quickstart
-[Pro Tip]: #pro-tip
+[Pro Tips]: #pro-tip
 [Notes]: #notes
 [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
 [Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
 [1.10.741]: https://clojurescript.org/news/2020-04-24-release
-[Add a Global Alias]: #add-an-global-alias
+[Add a Global Alias]: #add-a-global-alias
 [resolve many of these issues]: https://www.clojuriststogether.org/news/q2-2020-funding-announcement/
 [my dot-clojure]: https://github.com/athomasoriginal/dotfiles/blob/master/.clojure/deps.edn
 [Sean Corfield's dot-clojure]: https://github.com/seancorfield/dot-clojure
