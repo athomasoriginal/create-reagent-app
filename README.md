@@ -4,6 +4,10 @@ Setup a ClojureScript/Reagent app in one command.  This is meant to be used like
 
 Want to understand the decision made for this project?  Read [Start a ClojureScript App from Scratch](https://betweentwoparens.com/start-a-clojurescript-app-from-scratch)
 
+- [Housekeeping]
+- [Quickstart]
+- [Notes]
+
 ## Housekeeping
 
 - [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
@@ -56,6 +60,8 @@ project-name
 
 The structure of `organization-name/project-name` is defined by `clj-new` and not this template.  The reason I used these as the example is because it felt cleaner to describe it as `org/proj`.  Feel free to format however you like :)
 
-
+[Housekeeping]: #housekeeping
+[Quickstart]: #quickstart
+[Notes]: #notes
 [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
 [Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
