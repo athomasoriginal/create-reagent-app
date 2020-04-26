@@ -6,9 +6,8 @@ Want to understand the decision made for this project?  Read [Start a ClojureScr
 
 ## Housekeeping
 
-Before you can use this tool you will need Java and Clojure installed locally.  Here are some resources which should help you get started:
-
-- [Getting Started with Clojure](https://www.youtube.com/watch?v=SljDPNwAFOc&list=PLaGDS2KB3-ArG0WqAytE9GsZgrM-USsZA)
+- [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
+- [Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
 
 ## QuickStart
 
@@ -56,3 +55,7 @@ project-name
 ## Notes
 
 The structure of `organization-name/project-name` is defined by `clj-new` and not this template.  The reason I used these as the example is because it felt cleaner to describe it as `org/proj`.  Feel free to format however you like :)
+
+
+[Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
+[Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
