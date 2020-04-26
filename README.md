@@ -110,7 +110,7 @@ The structure of `organization-name/project-name` is defined by `clj-new` and no
 
 [Housekeeping]: #housekeeping
 [Quickstart]: #quickstart
-[Pro Tips]: #pro-tip
+[Pro Tips]: #pro-tips
 [Notes]: #notes
 [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
 [Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
