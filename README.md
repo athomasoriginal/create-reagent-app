@@ -96,7 +96,7 @@ Having to run the command above everytime we want to create a CLJS project is no
 
 - Move into the directory you want your clojurescript project to live
 
-- Run the above command:
+- Run the `create-reagent-app` alias:
 
   ```clj
   clj -A:create-reagent-app nike/fitness-app
