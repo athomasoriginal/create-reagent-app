@@ -10,8 +10,8 @@ Want to understand the decision made for this project?  Read [Start a ClojureScr
 
 ## Housekeeping
 
-- [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
-- [Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
+- [Install Java]
+- [Install Clojure]
 
 ## ClojureScript Version
 
