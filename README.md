@@ -6,6 +6,7 @@ Want to understand the decision made for this project?  Read [Start a ClojureScr
 
 - [Housekeeping]
 - [Quickstart]
+- [ClojureScript Version]
 - [Pro Tips]
   - [Add a Global Alias]
 - [Notes]
@@ -112,6 +113,7 @@ The structure of `organization-name/project-name` is defined by `clj-new` and no
 [Quickstart]: #quickstart
 [Pro Tips]: #pro-tips
 [Notes]: #notes
+[ClojureScript Version]: #clojurescript-version
 [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
 [Install Clojure]: https://www.youtube.com/watch?v=5_q5pLoz9b0&t=2s
 [1.10.741]: https://clojurescript.org/news/2020-04-24-release
