@@ -6,7 +6,6 @@ Want to understand the decision made for this project?  Read [Start a ClojureScr
 
 - [Housekeeping]
 - [Quickstart]
-- [ClojureScript Version]
 - [Pro Tips]
   - [Add a Global Alias]
 - [Notes]
@@ -15,12 +14,6 @@ Want to understand the decision made for this project?  Read [Start a ClojureScr
 
 - [Install Java]
 - [Install Clojure]
-
-## ClojureScript Version
-
-Note that we are not using the latest version of `cljs` ([1.10.741]) because this version is not currently compatible with some features of `figwheel.main`.  Fortunatley for us, Bruce, the main man behind `figwheel.main`, is coming back in full force to [resolve many of these issues].
-
-What does this mean for you?  Not much right now.  For many using this setup, you are likely not going to need the features provided by `1.10.741` so we can keep rocking out with `1.10.597` for a bit.
 
 ## QuickStart
 
@@ -34,7 +27,7 @@ As long as you have `clojure` installed you can follow these commands exactly an
   clj -Sdeps '{:deps
                 {seancorfield/clj-new {:mvn/version "1.0.199"}}}' \
     -m clj-new.create \
-    https://github.com/tkjone/create-reagent-app@a0f6b829d91cbefe2f69dede72054538e080b012 \
+    https://github.com/tkjone/create-reagent-app@ac511417d2710b0fc514c38dcdb789e3d05461f2 \
     nike/fitness-app
   ```
 
@@ -90,7 +83,7 @@ Having to run the command above everytime we want to create a CLJS project is no
    {:create-reagent-app
     {:extra-deps {seancorfield/clj-new {:mvn/version "1.0.199"}}
      :main-opts  ["-m" "clj-new.create"
-                  "https://github.com/tkjone/create-reagent-app@a0f6b829d91cbefe2f69dede72054538e080b012"]}}}
+                  "https://github.com/tkjone/create-reagent-app@ac511417d2710b0fc514c38dcdb789e3d05461f2"]}}}
   ```
 
   > For a better understanding of what this file looks like you can look at [my dot-clojure] file.  In addition, if you want to see another example of what an amazing `dot-clojure` file looks like I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
