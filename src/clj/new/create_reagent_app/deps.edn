@@ -2,15 +2,16 @@
  ["src" "test" "resources" "target"]
 
  :deps
- {org.clojure/clojurescript {:mvn/version "1.10.597"}
+ {org.clojure/clojurescript {:mvn/version "1.10.773"}
 
-  com.bhauman/figwheel-main {:mvn/version "0.2.4"}
+  com.bhauman/figwheel-main {:mvn/version "0.2.6"}
 
   reagent                   {:mvn/version "0.10.0"}}
 
  :aliases
  {:dev  {:main-opts ["-m"      "figwheel.main"
-                     "--build" "dev" "--repl"]}
+                     "--build" "dev"
+                     "--repl"]}
 
   :prod {:main-opts ["-m"              "figwheel.main"
                      "--optimizations" "advanced"
