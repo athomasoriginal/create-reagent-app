@@ -27,7 +27,7 @@ As long as you have `clojure` installed you can follow these commands exactly an
   clj -Sdeps '{:deps
                 {seancorfield/clj-new {:mvn/version "1.1.216"}}}' \
     -m clj-new.create \
-    https://github.com/tkjone/create-reagent-app@ac511417d2710b0fc514c38dcdb789e3d05461f2 \
+    https://github.com/tkjone/create-reagent-app@723b6fef850b186c20ce3fc92390f92015be5113 \
     nike/fitness-app
   ```
 
@@ -81,9 +81,9 @@ Having to run the command above everytime we want to create a CLJS project is no
   ```clojure
   {:aliases
    {:create-reagent-app
-    {:extra-deps {seancorfield/clj-new {:mvn/version "1.0.199"}}
+    {:extra-deps {seancorfield/clj-new {:mvn/version "1.1.216"}}
      :main-opts  ["-m" "clj-new.create"
-                  "https://github.com/tkjone/create-reagent-app@ac511417d2710b0fc514c38dcdb789e3d05461f2"]}}}
+                  "https://github.com/tkjone/create-reagent-app@723b6fef850b186c20ce3fc92390f92015be5113"]}}}
   ```
 
   > For a better understanding of what this file looks like you can look at [my dot-clojure] file.  In addition, if you want to see another example of what an amazing `dot-clojure` file looks like I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
