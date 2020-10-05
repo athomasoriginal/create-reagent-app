@@ -25,7 +25,7 @@ As long as you have `clojure` installed you can follow these commands exactly an
 
   ```bash
   clj -Sdeps '{:deps
-                {seancorfield/clj-new {:mvn/version "1.0.199"}}}' \
+                {seancorfield/clj-new {:mvn/version "1.1.216"}}}' \
     -m clj-new.create \
     https://github.com/tkjone/create-reagent-app@ac511417d2710b0fc514c38dcdb789e3d05461f2 \
     nike/fitness-app
