@@ -5,7 +5,7 @@
 - Run App
 
   ```bash
-  clj -A:dev
+  clj -M:dev
   ```
 
 - Visit App
@@ -18,5 +18,5 @@
 - Build production JavaScript bundle
 
   ```bash
-  clj -A:prod
+  clj -M:prod
   ```
