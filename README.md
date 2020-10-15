@@ -18,9 +18,9 @@ Please have the following installed before moving onto the `Quickstart` section.
 - [Install Java]
 - [Install Clojure]
 
-## QuickStart
+**Note:** This guides assumes you're using a minimum of Clojure CLI Tools version `1.10.1.697` or later!  For this reason, you're going to see what is, at the time of this writing, newer args passed to `clj`.
 
-> Note: these instructions assume you are using the Clojure CLI version 1.10.1.697 or later!
+## QuickStart
 
 Before starting, please be sure you've installed the required deps specified in `Housekeeping`.
 
@@ -32,7 +32,7 @@ Before starting, please be sure you've installed the required deps specified in 
   clj -Sdeps '{:deps
                 {seancorfield/clj-new {:mvn/version "1.1.228"}}}' \
     -X clj-new/create \
-    :template '"https://github.com/tkjone/create-reagent-app@723b6fef850b186c20ce3fc92390f92015be5113"' \
+    :template '"https://github.com/tkjone/create-reagent-app@518b9cb0b2c36daff44cc6fe1048512dfd938842"' \
     :name nike/fitness-app
   ```
 
@@ -93,7 +93,7 @@ Having said this, the best thing is to add a global `.clojure` alias.  To do thi
    {:create-reagent-app
     {:extra-deps {seancorfield/clj-new {:mvn/version "1.1.228"}}
      :ns-default clj-new
-     :exec-args  {:template "https://github.com/tkjone/create-reagent-app@723b6fef850b186c20ce3fc92390f92015be5113"}}}}
+     :exec-args  {:template "https://github.com/tkjone/create-reagent-app@518b9cb0b2c36daff44cc6fe1048512dfd938842"}}}}
   ```
 
   > For a better understanding of what this file looks like you can look at [my dot-clojure] file.  In addition, if you want to see another example of what an amazing `dot-clojure` file looks like I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
