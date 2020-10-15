@@ -2,29 +2,40 @@
 
 Setup a ClojureScript/Reagent app in one command.  This is meant to be used like Create React App but with much less opinion and no need to "eject" from anything.
 
-Want to understand the decision made for this project?  Read [Start a ClojureScript App from Scratch]
+Want to understand the decisions made for this project?  Read [Start a ClojureScript App from Scratch]
 
 - [Housekeeping]
 - [Quickstart]
 - [Pro Tips]
   - [Add a Global Alias]
   - [Using The Global Alias]
+  - [Keeping Aliases Updated]
 - [Notes]
 
 ## Housekeeping
 
-Please have the following installed before moving onto the `Quickstart` section.
+Install the following before moving onto the `Quickstart`
 
 - [Install Java]
 - [Install Clojure]
 
-**Note:** This guides assumes you're using a minimum of Clojure CLI Tools version `1.10.1.697` or later!  For this reason, you're going to see what is, at the time of this writing, newer args passed to `clj`.
+**Note:** This guides assumes you're using a minimum of Clojure CLI Tools version `1.10.1.697` or later!  This is why you see see newer args passed to `clj`. (At the time of this writing anyways October 15, 2020).  Not sure which version you have?  Run the following command:
+
+```bash
+clj -h
+```
+
+The first lines of the output will look something like this:
+
+```bash
+➜ clj -h
+Version: 1.10.1.708
+# ..
+```
 
 ## QuickStart
 
-Before starting, please be sure you've installed the required deps specified in `Housekeeping`.
-
-- Move to the directory where you want your ClojureScript app to live
+- Move to a directory where you want your ClojureScript app to live
 
 - run `create-reagent-app`
 
@@ -36,7 +47,7 @@ Before starting, please be sure you've installed the required deps specified in 
     :name nike/fitness-app
   ```
 
-> `nike` is an example of your `organization-name` and `fitness-app` is the name of your app.  Thus, the structure of that line should be  `organization-name/project-name` and the result is that it will generate a project structure like this:
+The format of `:name` is `<org-name>/<app-name>`.  So in this case, if you were working for `nike`, you `org-name` would be `nike` and your `app-name` would be `fitness-app`.  Of course, you can be more create.  See the [official clj-new docs] for more info on the args.
 
 ```bash
 fitness-app
@@ -71,7 +82,7 @@ fitness-app
 
 ### Add a Global Alias
 
-I used the above command for two reasons:
+I used the verbose command in the [QuickStart] section for two reasons:
 
 - An example of using `-X` with clj-new/create
 - No additional configuration needed
@@ -100,17 +111,25 @@ Having said this, the best thing is to add a global `.clojure` alias.  To do thi
 
 ### Using The Global Alias
 
-Assuming you have completed the step in [Add a Global Alias]
+Assuming you have finished the [Add a Global Alias] step
 
-- Move into the directory you want your clojurescript project to live
+- Move to a directory where you want your ClojureScript app to live
 
 - Run the `create-reagent-app` alias:
 
   ```clj
-  clj -x:create-reagent-app :name nike/fitness-app
+  clj -x:create-reagent-app create :name nike/fitness-app
   ```
 
-Much better, yes?  Of course, whenever this project is updated, and you want those changes, you will have to update the `@a0f6b829d9...` portion of the `alias` to the latest version of this repo.   This is low effort though, and because of the stability, and low dep count of this project, you shouldn't need to worry about updating this very often.  Happy coding!
+Much better, yes?
+
+### Keeping aliases updated
+
+Whenever this project updates, you will need to use the latest `hash` to take advantage of those changes.
+
+- visit this repos [commit history]
+- copy the latest `sha hash`
+- replace the `sha hash` in your alias with the new `sha hash`
 
 ## Notes
 
@@ -122,6 +141,7 @@ The structure of `organization-name/project-name` is defined by `clj-new` and no
 [Notes]: #notes
 [ClojureScript Version]: #clojurescript-version
 [Using The Global Alias]: #using-the-global-alias
+[Keeping Aliases Updated]: #keeping-aliases-updated
 
 
 [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc
@@ -133,3 +153,5 @@ The structure of `organization-name/project-name` is defined by `clj-new` and no
 [Sean Corfield's dot-clojure]: https://github.com/seancorfield/dot-clojure
 [Add a Global Alias]: #add-a-global-alias
 [Start a ClojureScript App from Scratch]: https://betweentwoparens.com/start-a-clojurescript-app-from-scratch
+[official clj-new docs]: https://github.com/seancorfield/clj-new
+[commit history]: https://github.com/athomasoriginal/create-reagent-app/commits/master
