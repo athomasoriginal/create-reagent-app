@@ -118,7 +118,7 @@ Assuming you have finished the [Add a Global Alias] step
 - Run the `create-reagent-app` alias:
 
   ```clj
-  clj -x:create-reagent-app create :name nike/fitness-app
+  clj -X:create-reagent-app create :name nike/fitness-app
   ```
 
 Much better, yes?
