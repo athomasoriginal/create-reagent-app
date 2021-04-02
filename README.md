@@ -25,11 +25,11 @@ Install the following before moving onto the `Quickstart`
 clj -h
 ```
 
-The first lines of the output will look something like this:
+The first lines of the output will look _something_ like this:
 
 ```bash
 ➜ clj -h
-Version: 1.10.1.708
+Version: 1.10.2.796
 # ..
 ```
 
