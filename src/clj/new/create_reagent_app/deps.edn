@@ -6,7 +6,7 @@
 
   com.bhauman/figwheel-main {:mvn/version "0.2.12"}
 
-  reagent/reagent           {:mvn/version "0.10.0"}}
+  reagent/reagent           {:mvn/version "1.0.0"}}
 
  :aliases
  {:dev  {:main-opts ["--main"  "figwheel.main"
