@@ -2,14 +2,15 @@
 
 ## Quick Start
 
+- Build JavaScript Deps
+  ```bash
+  npm install
+  ```
 - Run App
-
   ```bash
   clj -M:dev
   ```
-
 - Visit App
-
   http://localhost:9500
 
 

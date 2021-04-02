@@ -1,3 +1,4 @@
-^{:watch-dirs ["src"]
-  :css-dirs   ["resources"]}
+^{:auto-bundle :webpack
+  :watch-dirs  ["src"]
+  :css-dirs    ["resources"]}
 {:main {{namespace}}}
