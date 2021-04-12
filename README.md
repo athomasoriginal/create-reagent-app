@@ -47,7 +47,7 @@ Version: 1.10.2.796
     :name nike/fitness-app
   ```
 
-The format of `:name` is `<org-name>/<app-name>`.  So in this case, if you were working for `nike`, you `org-name` would be `nike` and your `app-name` would be `fitness-app`.  Of course, you can be more create.  See the [official clj-new docs] for more info on the args.
+The format of `:name` is `<org-name>/<app-name>`.  So in this case, if you were working for `nike`, you `org-name` would be `nike` and your `app-name` would be `fitness-app`.  See the [official clj-new docs] for more info on the args.
 
 ```bash
 fitness-app
