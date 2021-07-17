@@ -104,7 +104,7 @@ Having said this, the best thing is to add a global `.clojure` alias.  To do thi
    {:create-reagent-app
     {:extra-deps {seancorfield/clj-new {:mvn/version "1.1.321"}}
      :ns-default clj-new
-     :exec-args  {:template "https://github.com/tkjone/create-reagent-app@a7a9968d2164b8562a7802c882dd5447998bd00f"}}}}
+     :exec-args  {:template "https://github.com/tkjone/create-reagent-app@7500dd43dc1be88a762ec2d74aad1f2c2c29842d"}}}}
   ```
 
   > For a better understanding of what this file looks like you can look at [my dot-clojure] file.  In addition, if you want to see another example of what an amazing `dot-clojure` file looks like I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
