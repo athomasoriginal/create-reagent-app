@@ -41,7 +41,7 @@ Version: 1.10.2.796
 
   ```bash
   clj -Sdeps '{:deps
-                {seancorfield/clj-new {:mvn/version "1.1.321"}}}' \
+                {seancorfield/clj-new {:mvn/version "1.1.309"}}}' \
     -X clj-new/create \
     :template '"https://github.com/tkjone/create-reagent-app@7500dd43dc1be88a762ec2d74aad1f2c2c29842d"' \
     :name nike/fitness-app
@@ -102,7 +102,7 @@ Having said this, the best thing is to add a global `.clojure` alias.  To do thi
   ```clojure
   {:aliases
    {:create-reagent-app
-    {:extra-deps {seancorfield/clj-new {:mvn/version "1.1.321"}}
+    {:extra-deps {seancorfield/clj-new {:mvn/version "1.1.309"}}
      :ns-default clj-new
      :exec-args  {:template "https://github.com/tkjone/create-reagent-app@7500dd43dc1be88a762ec2d74aad1f2c2c29842d"}}}}
   ```
