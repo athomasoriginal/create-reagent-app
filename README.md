@@ -67,11 +67,14 @@ fitness-app
 ```
 
 - Move into `fitness-app`
-
   ```bash
   cd fitness-app
   ```
-
+- Install JS deps
+  ```bash
+  yarn install
+  ```
+  > If you don't have `yarn` installed you can use `npm instead`
 - Run the app for development
 
   ```bash
