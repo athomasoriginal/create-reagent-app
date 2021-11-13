@@ -43,7 +43,7 @@ Version: 1.10.2.796
   clj -Sdeps '{:deps
                 {seancorfield/clj-new {:mvn/version "1.2.362"}}}' \
     -X clj-new/create \
-    :template '"https://github.com/athomasoriginal/create-reagent-app@4ec34b2b53017289e0d166e0c80fa73edafbca93"' \
+    :template '"https://github.com/athomasoriginal/create-reagent-app@9765fdd8020887ed5caad49729d42ab9643a0793"' \
     :name nike/fitness-app
   ```
 
@@ -108,7 +108,7 @@ Having said this, the best thing is to add a global `.clojure` alias.  To do thi
    :create-reagent-app
    {:extra-deps {com.github.seancorfield/clj-new {:mvn/version "1.2.362"}}
     :exec-fn    clj-new/create
-    :exec-args  {:template "https://github.com/athomasoriginal/create-reagent-app@6e3460fbb7c140c7282b26b1b82e82fb520df837"}}}
+    :exec-args  {:template "https://github.com/athomasoriginal/create-reagent-app@9765fdd8020887ed5caad49729d42ab9643a0793"}}}
   ```
 
   > For a better understanding of what this file looks like you can look at [my dot-clojure] file.  In addition, if you want to see another example of what an amazing `dot-clojure` file looks like I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
