@@ -37,14 +37,17 @@ Version: 1.10.2.796
 
 - Move to a directory where you want your ClojureScript app to live
 
-- run `create-reagent-app`
+- Install `clj-new` as a clojure tool
+  ```bash
+  clojure -Ttools install com.github.seancorfield/clj-new \
+    '{:git/tag "v1.2.399"}' :as clj-new
+  ```
+- Create app using `create-reagent-app`
 
   ```bash
-  clj -Sdeps '{:deps
-                {seancorfield/clj-new {:mvn/version "1.2.362"}}}' \
-    -X clj-new/create \
-    :template '"https://github.com/athomasoriginal/create-reagent-app@9765fdd8020887ed5caad49729d42ab9643a0793"' \
-    :name nike/fitness-app
+  clojure -Tclj-new create \
+    :template '"https://github.com/athomasoriginal/create-reagent-app@5d15373ae711d215cd426e77b029238762e1df1d"' \
+    :name nike/nike-app
   ```
 
 The format of `:name` is `<org-name>/<app-name>`.  So in this case, if you were working for `nike`, you `org-name` would be `nike` and your `app-name` would be `fitness-app`.  See the [official clj-new docs] for more info on the args.

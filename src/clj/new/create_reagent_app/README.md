@@ -4,7 +4,7 @@
 
 - Build JavaScript Deps
   ```bash
-  npm install
+  yarn install
   ```
 - Run App
   ```bash
