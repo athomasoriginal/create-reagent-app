@@ -1,6 +1,7 @@
 # Create Reagent App
 
-Setup a ClojureScript/Reagent app in one command.  This is meant to be used like Create React App but with much less opinion and no need to "eject" from anything.
+Setup a ClojureScript/Reagent app in one command.  This is meant to be used like
+Create React App but with much less opinion and no need to "eject" from anything.
 
 Want to understand the decisions made for this project?  Read [Start a ClojureScript App from Scratch]
 
@@ -46,7 +47,7 @@ Version: 1.10.2.796
 
   ```bash
   clojure -Tclj-new create \
-    :template '"https://github.com/athomasoriginal/create-reagent-app@5d15373ae711d215cd426e77b029238762e1df1d"' \
+    :template '"https://github.com/athomasoriginal/create-reagent-app@9765fdd8020887ed5caad49729d42ab9643a0793"' \
     :name nike/nike-app
   ```
 
@@ -88,33 +89,32 @@ fitness-app
 
 ### Add a Global Alias
 
-I used the verbose command in the [QuickStart] section for two reasons:
-
-- An example of using `-X` with clj-new/create
-- No additional configuration needed
-
-Having said this, the best thing is to add a global `.clojure` alias.  To do this, follow these steps:
+The install directions show you the quick and dirty approach.  However, if you
+find yourself starting projects more often than not and want to save yourself
+some typing and the overhead of thinking about additional configuration.  To do
+this:
 
 - Open your global `.clojure` directory
-
   ```bash
-  atom ~/.clojure
+  vim ~/.clojure
   ```
-
-  > Note that `atom` is _my_ editor.  If you're not using `atom`, replace `atom` with the CLI command for your editor of choice.  Or just open `~/.clojure` from inside of your editor.
-
+  > Note that `vim` is _my_ editor.  If you're not using `vim`, replace `vim`
+  > with the CLI command for your editor of choice.  Or just open `~/.clojure`
+  > from inside of your fav' editor.
 - Add the following alias to the `deps.edn` file in `~/.clojure`
-
   ```clojure
   {:aliases
    ;; ...
-   :create-reagent-app
-   {:extra-deps {com.github.seancorfield/clj-new {:mvn/version "1.2.362"}}
+   :new
+   {:extra-deps {com.github.seancorfield/clj-new {:mvn/version "1.2.399"}}
     :exec-fn    clj-new/create
-    :exec-args  {:template "https://github.com/athomasoriginal/create-reagent-app@9765fdd8020887ed5caad49729d42ab9643a0793"}}}
+    :exec-args  {:template "https://github.com/athomasoriginal/create-reagent-app@d844d4119f81ad15757a975655992704dedf3046"}}}}
   ```
-
-  > For a better understanding of what this file looks like you can look at [my dot-clojure] file.  In addition, if you want to see another example of what an amazing `dot-clojure` file looks like I highly encourage you to read and absorb [Sean Corfield's dot-clojure] file.
+  > I called mine `new`, but you can call it anything you like.  For a better
+  > understanding of what this file looks like you can look at
+  > [my dot-clojure] file.  In addition, if you want to see another example of
+  > what an amazing `dot-clojure` file looks like I highly encourage you to
+  > take a look at [Sean Corfield's dot-clojure] file.
 
 ### Using The Global Alias
 
