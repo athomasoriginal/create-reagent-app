@@ -1,2 +1,10 @@
+# mac
+.DS_STORE
+
+# clojure
+.lsp
 .cpcache
+.clj-kondo
+
+# personal
 build-journal.md
