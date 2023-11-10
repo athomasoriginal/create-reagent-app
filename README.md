@@ -1,5 +1,8 @@
 # Create Reagent App
 
+> [!IMPORTANT]
+> This project is now inactive.  See [templates](https://github.com/athomasoriginal/templates).
+
 Setup a ClojureScript/Reagent app in one command.  This is meant to be used like
 Create React App but with much less opinion and no need to "eject" from anything.
 
